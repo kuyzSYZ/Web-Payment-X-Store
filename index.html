@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>kuyzSYZ</title>
+<!-- Favicon -->
+<link href="https://files.catbox.moe/m4g40a.jpg" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="style.css" rel="stylesheet"/></head>
+<body>
+<div class="loader" id="loader">
+<div class="spinner"></div>
+</div>
+<div class="page" id="about">
+<h1>Halo Aku kuyzSYZ</h1>
+<div class="typing-animation">Web Payment kuyzSYZ|</div>
+<p class="subtitle">Ini adalah website Payment kuyzSYZ, Jangan sampai salah ya ^-^</p>
+<a class="btn" href="#" onclick="showPayment()">Go to Payment</a>
+<a class="btn" href="#" onclick="showProductStore()" style="margin-top: 15px;">Go to Product Store</a>
+</div>
+<div class="page hidden" id="payment">
+<h1>Payment Methods</h1>
+<p class="subtitle">Silahkan pilih salah satu metode pembayaran di bawah ini</p>
+<div class="qr-frame" onclick="zoomQR()">
+<img alt="QR Code for Payment" id="qrisImage" src="https://files.catbox.moe/m4g40a.jpg"/>
+</div>
+<p class="subtitle">Scan kode QR di atas dengan aplikasi pembayaran Anda</p>
+<div class="payment-info">
+<details>
+<summary>E-WALLET</summary>
+<p><strong>DANA</strong>: 6285609248407</p>
+<p><strong>NAMA DANA</strong>: NANI MARYANI</p>
+<p><strong>GOPAY</strong>: 6285609248407</p>
+<p><strong>NAMA GOPAY</strong>: kuyzSYZ</p>
+</details>
+<details>
+<summary>TRANSFER BANK</summary>
+<p><strong>BNI</strong>: 6285609248407</p>
+</details>
+</div>
+<div class="social">
+<a class="btn" href="https://wa.me/6283135630231" target="_blank">WhatsApp</a>
+<a class="btn" href="https://t.me/kuyzSYZ" target="_blank">Telegram</a>
+</div>
+<a class="btn" href="#" onclick="showAbout()">Back</a>
+</div>
+<div id="product-store">
+<!-- Hero / Landing -->
+<section class="product-section text-center" id="beranda">
+<div class="max-w-3xl mx-auto">
+<h1 class="text-4xl md:text-5xl font-bold mb-6">Selamat Datang di <span style="color: #ff00ff">kuyzSYZ</span></h1>
+<p class="text-lg text-gray-300 mb-6">
+                    Temukan berbagai produk Hosting dan Regedit. Belanja mudah langsung dari ponselmu!
+                </p>
+<a class="product-btn" href="#produk-horizontal">Lihat Produk</a>
+</div>
+</section>
+<!-- Foto Owner -->
+<section class="product-section text-center" id="owner">
+<div class="max-w-xl mx-auto">
+<img alt="Foto Saya" class="w-32 h-32 rounded-full mx-auto shadow-lg mb-4" src="https://files.catbox.moe/m4g40a.jpg"/>
+<h2 class="text-2xl font-semibold mb-2">Hai, saya </h2>
+<p class="text-gray-300 text-base">
+                    Pemilik kuyzSYZ. Saya menyediakan produk Hosting terbaik dengan pelayanan cepat dan aman. Silakan lihat produk kami di bawah!
+                </p>
+</div>
+</section>
+<!-- Produk Horizontal -->
+<section class="product-section" id="produk-horizontal">
+<h2 class="text-2xl font-bold text-center mb-6">Best Produk Dari kuyzSYZ</h2>
+<div class="overflow-x-auto">
+<div class="flex space-x-6">
+<!-- Produk 1 -->
+<div class="min-w-[220px] product-item">
+<img alt="Panel Unlimited" class="w-full h-40 object-cover rounded" src="https://files.catbox.moe/m4g40a.jpg"/>
+<h3 class="text-lg font-semibold mt-2">Panel Unlimited</h3>
+<p class="text-sm text-gray-400">Cocok untuk run bot dan run sc</p>
+<a class="block mt-3 product-btn text-center" href="https://wa.me/6283135630231?text=Bg%20gw%20mau%20beli%20Panel%20Unlimited">Beli Sekarang</a>
+<button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded mt-2 block w-full" onclick="showPopup('popupDeskripsi1')">Deskripsi</button>
+</div>
+<!-- Produk 2 -->
+<div class="min-w-[220px] product-item">
+<img alt="Nokos" class="w-full h-40 object-cover rounded" src="https://files.catbox.moe/m4g40a.jpg"/>
+<h3 class="text-lg font-semibold mt-2">Nokos</h3>
+<p class="text-sm text-gray-400">Cocok untuk prank temen</p>
+<a class="block mt-3 product-btn text-center" href="https://wa.me/6283135630231?text=Bg%20gw%20mau%20beli%20Nokos">Beli Sekarang</a>
+<button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded mt-2 block w-full" onclick="showPopup('popupDeskripsi2')">Deskripsi</button>
+</div>
+<!-- Produk 3 -->
+<div class="min-w-[220px] product-item">
+<img alt="Aim Lock" class="w-full h-40 object-cover rounded" src="https://files.catbox.moe/m4g40a.jpg"/>
+<h3 class="text-lg font-semibold mt-2">Aim Lock</h3>
+<p class="text-sm text-gray-400">Cocok untuk mempermudah headshot.</p>
+<a class="block mt-3 product-btn text-center" href="https://wa.me/6283135630231?text=Bg%20gw%20mau%20beli%20Aimlock">Beli Sekarang</a>
+<button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded mt-2 block w-full" onclick="showPopup('popupDeskripsi2')">Deskripsi</button>
+</div>
+</div>
+</div>
+</section>
+<a class="btn" href="#" onclick="showAbout()" style="display: block; margin: 20px auto; max-width: 200px;">Back to Main</a>
+</div>
+<!-- Popup Deskripsi Produk 1 -->
+<div class="product-popup" id="popupDeskripsi1">
+<div class="product-popup-content">
+<h3 class="text-lg font-semibold mb-2">Deskripsi Produk</h3>
+<p class="text-gray-300 text-sm">Panel Unlimited cocok untuk run bot, run sc bug, open jasa bot dan open murbug.</p>
+<button class="mt-4 product-btn w-full" onclick="hidePopup('popupDeskripsi1')">Tutup</button>
+</div>
+</div>
+<!-- Popup Deskripsi Produk 2 -->
+<div class="product-popup" id="popupDeskripsi2">
+<div class="product-popup-content">
+<h3 class="text-lg font-semibold mb-2">Deskripsi Produk</h3>
+<p class="text-gray-300 text-sm">Nokos cocok untuk prank temen, prank pacar, atau di gunakan sehari-hari.</p>
+<button class="mt-4 product-btn w-full" onclick="hidePopup('popupDeskripsi2')">Tutup</button>
+</div>
+</div>
+<!-- Popup Deskripsi Produk 3 -->
+<div class="product-popup" id="popupDeskripsi3">
+<div class="product-popup-content">
+<h3 class="text-lg font-semibold mb-2">Deskripsi Produk</h3>
+<p class="text-gray-300 text-sm">Aimlock cocok untuk mempermudah Headshot pada game free fire dan ketika menembak cursor akan otomatis ke kepala player.</p>
+<button class="mt-4 product-btn w-full" onclick="hidePopup('popupDeskripsi3')">Tutup</button>
+</div>
+</div>
+<div class="overlay" id="qrOverlay" onclick="closeZoom()">
+<img alt="QR Code for Payment" id="zoomedQR" src=""/>
+</div>
+
+<script src="script.js"></script></body>
+</html>
